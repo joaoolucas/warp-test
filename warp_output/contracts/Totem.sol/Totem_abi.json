@@ -1,0 +1,573 @@
+[
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "data": [
+            {
+                "name": "name",
+                "type": "felt"
+            },
+            {
+                "name": "courseOwner",
+                "type": "felt"
+            },
+            {
+                "name": "totalStaked",
+                "type": "Uint256"
+            },
+            {
+                "name": "stakedTokenAddress",
+                "type": "felt"
+            },
+            {
+                "name": "courseId",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "CourseAdded_81492c82",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "courseId",
+                "type": "Uint256"
+            },
+            {
+                "name": "studentAddress",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "StudentAdded_e1cacc7b",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "challengeId",
+                "type": "Uint256"
+            },
+            {
+                "name": "courseId",
+                "type": "Uint256"
+            },
+            {
+                "name": "challengeReward",
+                "type": "Uint256"
+            },
+            {
+                "name": "name",
+                "type": "felt"
+            },
+            {
+                "name": "question",
+                "type": "felt"
+            },
+            {
+                "name": "uri",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "ChallengeAdded_fd088848",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "courseId",
+                "type": "Uint256"
+            },
+            {
+                "name": "challengeId",
+                "type": "Uint256"
+            },
+            {
+                "name": "answer",
+                "type": "felt"
+            },
+            {
+                "name": "studentAddress",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "SubmittedChallenge_0652388f",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "challengeId",
+                "type": "Uint256"
+            },
+            {
+                "name": "courseId",
+                "type": "Uint256"
+            },
+            {
+                "name": "score",
+                "type": "Uint256"
+            },
+            {
+                "name": "rewardAmount",
+                "type": "Uint256"
+            },
+            {
+                "name": "studentAddress",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "ValidatedSubmit_08454f25",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "challengeId",
+                "type": "Uint256"
+            },
+            {
+                "name": "courseId",
+                "type": "Uint256"
+            },
+            {
+                "name": "studentAddress",
+                "type": "felt"
+            },
+            {
+                "name": "reward",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "Claimed_b94bf7f9",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_9_symbol",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_10_tokenAddress",
+                "type": "felt"
+            }
+        ],
+        "name": "whitelistTokens_d7b011dc",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_11_amount",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_12_symbol",
+                "type": "Uint256"
+            }
+        ],
+        "name": "depositTokens_d15b223e",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_13_amount",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_14_symbol",
+                "type": "Uint256"
+            }
+        ],
+        "name": "withdrawTokens_8f97994b",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_15_name_len",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_15_name",
+                "type": "felt*"
+            },
+            {
+                "name": "__warp_16_ownerAddress",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_17_stakeAmount",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_18_tokenAddress",
+                "type": "felt"
+            }
+        ],
+        "name": "addCourse_f1c12be0",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_19_studentAddress",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_20_courseId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "addStudents_84a70c72",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_21_courseId",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_22_challengeReward",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_23_name_len",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_23_name",
+                "type": "felt*"
+            },
+            {
+                "name": "__warp_24_question_len",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_24_question",
+                "type": "felt*"
+            },
+            {
+                "name": "__warp_25_uri_len",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_25_uri",
+                "type": "felt*"
+            }
+        ],
+        "name": "addChallenge_a157cded",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_26_answer_len",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_26_answer",
+                "type": "felt*"
+            },
+            {
+                "name": "__warp_27_courseId",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_28_challengeId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "submitChallenge_c49cf7f3",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_29_challengeId",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_30_courseId",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_31_score",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_32_studentAddress",
+                "type": "felt"
+            }
+        ],
+        "name": "validateSubmit_9ce5db26",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_33_challengeId",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_34_courseId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "Claim_022e3d29",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_35_courseId",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_36_challengeId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "getChallengeReward_35713e44",
+        "outputs": [
+            {
+                "name": "reward",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_37_courseId",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_38_challengeId",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_39_studentAddress",
+                "type": "felt"
+            }
+        ],
+        "name": "getStudentReward_1996afab",
+        "outputs": [
+            {
+                "name": "reward",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_40__i0",
+                "type": "Uint256"
+            }
+        ],
+        "name": "challengeCount_1f422587",
+        "outputs": [
+            {
+                "name": "__warp_41",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_42__i0",
+                "type": "Uint256"
+            }
+        ],
+        "name": "courses_96f979d2",
+        "outputs": [
+            {
+                "name": "__warp_43_len",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_43",
+                "type": "felt*"
+            },
+            {
+                "name": "__warp_44",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_45",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_46",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_47",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_48",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_49",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_51__i0",
+                "type": "Uint256"
+            }
+        ],
+        "name": "whitelistedTokens_aa3d9a15",
+        "outputs": [
+            {
+                "name": "__warp_52",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_53__i0",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_54__i1",
+                "type": "Uint256"
+            }
+        ],
+        "name": "accountBalances_e64fe366",
+        "outputs": [
+            {
+                "name": "__warp_55",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "challengeCounter_f7fed02c",
+        "outputs": [
+            {
+                "name": "__warp_56",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "status_200d2ed2",
+        "outputs": [
+            {
+                "name": "__warp_57",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "__warp_58__i0",
+                "type": "Uint256"
+            }
+        ],
+        "name": "allCourses_cb88dc79",
+        "outputs": [
+            {
+                "name": "__warp_59_len",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_59",
+                "type": "felt*"
+            },
+            {
+                "name": "__warp_60",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_61",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_62",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_63",
+                "type": "felt"
+            },
+            {
+                "name": "__warp_64",
+                "type": "Uint256"
+            },
+            {
+                "name": "__warp_65",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "constructor",
+        "outputs": [],
+        "type": "constructor"
+    }
+]
